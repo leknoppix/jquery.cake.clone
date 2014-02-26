@@ -14,7 +14,7 @@ Inclure le script *après* la librairy Jquery
 
 ## Usage
 
-Supposons que nous avons ceci comme instruction en php (lié biensûr au framework cakePhp):
+Supposons que nous avons ceci comme instruction en php (lié bien sûr au framework cakePhp):
 
 ```php
 <div class="body-0">
@@ -35,7 +35,7 @@ Nous obtiendrons en code source HTML:
 
 ```
 
-Afin que le clonage réussisse correctement, nous allons lancé le clonage lors du click sur le lien présentant le selecteur class appelé *addproduct*. Nous devons donc faire appel à l'extension jquery.cake.clone accompagné avec des options afin de cloner le ou les champs selectionnés.
+Afin que le clonage réussisse correctement, nous allons lancer le clonage lors du click sur le lien présentant le selecteur class appelé *addproduct*. Nous devons donc faire appel à l'extension jquery.cake.clone, accompagné des options afin de cloner le ou les champ(s) selectionné(s).
 Voici un exemple d'appel:
 
 ```javascript
@@ -67,13 +67,13 @@ Lors de l'exécution d'un clonage, nous obtiendrons:
 ````
 
 Le tableau des options contient plusieurs paramètres.
-* Le premier paramètre *init* permet d'identifier le numéro de la div maitre (la div à cloner).
-* Le second paramètre *nbrincrem* doit être au lancement du script le même que *init* et permet d'incrémenter à chaque ajout le numéro du clone réalisé.
+* Le premier paramètre *init* permet d'identifier le numéro de la div maitresse (la div à cloner).
+* Le second paramètre *nbrincrem* doit être, au lancement du script, le même que *init* et permet d'incrémenter à chaque ajout le numéro du clone réalisé.
 * Le troisième paramètre *classclone* indique le nom de la div à cloner sans son identification numérique.
 * Le dernier paramètre *controller* sert à indiquer le nom du controller.
 
 ## Evolution
 
 Ce plugin étant simpliste, il risque d'évoluer au fur et à mesure des usages et des retours.
-Pour tout problème rencontrer, n'hésitez pas à utiliser le wiki pour retourner vos idées.
+Pour tout problème rencontré, n'hésitez pas à utiliser le wiki pour retourner vos idées.
 Merci d'avance.
