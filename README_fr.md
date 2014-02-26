@@ -64,7 +64,7 @@ Lors de l'exécution d'un clonage, nous obtiendrons:
 </div>
 <a href="#" class="addproduct">Ajouter un produit</a>
 
-̀``
+````
 
 Le tableau des options contient plusieurs paramètres.
 * Le premier paramètre *init* permet d'identifier le numéro de la div maitre (la div à cloner).
