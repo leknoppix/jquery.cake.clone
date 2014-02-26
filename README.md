@@ -1,10 +1,10 @@
 # jquery.cake.clone
 
-Un simple jQuery plugin pour cloner les inputs générés via cakePhp.
+A simple jQuery plugin to clone inputs generated via CakePHP.
 
 ## Installation
 
-Inclure le script *après* la librairy Jquery
+Include the script * after * the Jquery librairy.
 
 ```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -12,9 +12,9 @@ Inclure le script *après* la librairy Jquery
 
 ```
 
-## Usage
+## How to
 
-Supposons que nous avons ceci comme instruction en php (lié biensûr au framework cakePhp):
+Suppose we have this as instruction in php (of course linked to the CakePHP framework):
 
 ```php
 <div class="body-0">
@@ -22,21 +22,21 @@ Supposons que nous avons ceci comme instruction en php (lié biensûr au framewo
 	echo $this->Form->input('0.name');
 ?>
 </div>
-<a href="#" class="addproduct">Ajouter un produit</a>
+<a href="#" class="addproduct">Add a new product</a>
 
 ```
 
-Nous obtiendrons en code source HTML:
+We get source code HTML:
 
 ```html
 <div class="body-0">
-<div class="input text"><label for="0Name">Name</label><input name="data[0][name]" type="text" id="0Name"/></div></div>
-<a href="#" class="addproduct">Ajouter un produit</a>
+<div class="input text"><label for="Controller0Name">Name</label><input name="data[Controller][0][name]" type="text" id="Controller0Name"/></div></div>
+<a href="#" class="addproduct">Add a new product</a>
 
 ```
 
-Afin que le clonage réussisse correctement, nous allons lancé le clonage lors du click sur le lien présentant le select class appelé *addproduct*. Nous devons donc faire appel à l'extension jquery.cake.clone accompagné avec des options afin de cloner le ou les champs selectionnés.
-Voici un exemple d'appel:
+So that the successful cloning correctly, we launched cloning when clicking on the link with the class selector called *addproduct*. We need to use the extension jquery.cake.clone accompanied with options to clone the fields selected.
+Here is an example call:
 
 ```javascript
 $(function() {
@@ -54,7 +54,7 @@ $(function() {
 
 ```
 
-Lors de l'exécution d'un clonage, nous obtiendrons:
+When running a cloning, we get:
 ```html
 <div class="body-0">
 <div class="input text"><label for="Controller0Name">Name</label><input name="data[Controller][0][name]" type="text" id="0Name"/></div>
@@ -62,18 +62,18 @@ Lors de l'exécution d'un clonage, nous obtiendrons:
 <div class="body-1">
 <div class="input text"><label for="Controller1Name">Name</label><input name="data[Controller][1][name]" type="text" id="Controller1Name"/></div>
 </div>
-<a href="#" class="addproduct">Ajouter un produit</a>
+<a href="#" class="addproduct">Add a new product</a>
 
 ̀``
 
-Le tableau des options contient plusieurs paramètres.
-* Le premier paramètre init permet d'identifier la div maitre (la div à cloner).
-* Le second paramètre nbrincrem doit être au lancement du script le même que *init* et permet d'incrémenter à chaque ajout le numéro du clone réalisé.
-* Le troisième paramètre classclone indique le nom de la div à cloner sans son identification numérique.
-* Le dernier paramètre sert à indiquer le nom du controller.
+The options array contains several parameters.
+* The first parameter *init* identifies the master div (the div to clone).
+* The second parameter *nbrincrem* must be the same as the launch of * init* and will increment each time you add the number of the clone made​​..
+* The third parameter *classclone* specifies the name of the div to be cloned without its identification number.
+* The last parameter *controller* is used to specify the name of the controller.
 
 ## Evolution
 
-Ce plugin étant simpliste, il risque d'évoluer au fur et à mesure des usages et des retours.
-Pour tout problème rencontrer, n'hésitez pas à utiliser le wiki pour retourner vos idées.
-Merci d'avance.
+This plugin is simple, it may evolve progressively uses and returns. 
+To meet any problem, do not hesitate to use the wiki to return your ideas. 
+Thank you in advance.
