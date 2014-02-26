@@ -64,7 +64,6 @@ Lors de l'exécution d'un clonage, nous obtiendrons:
 </div>
 <a href="#" class="addproduct">Ajouter un produit</a>
 
-
 ̀``
 
 Le tableau des options contient plusieurs paramètres.
@@ -72,3 +71,9 @@ Le tableau des options contient plusieurs paramètres.
 * Le second paramètre nbrincrem doit être au lancement du script le même que *init* et permet d'incrémenter à chaque ajout le numéro du clone réalisé.
 * Le troisième paramètre classclone indique le nom de la div à cloner sans son identification numérique.
 * Le dernier paramètre sert à indiquer le nom du controller.
+
+## Evolution
+
+Ce plugin étant simpliste, il risque d'évoluer au fur et à mesure des usages et des retours.
+Pour tout problème rencontrer, n'hésitez pas à utiliser le wiki pour retourner vos idées.
+Merci d'avance.
