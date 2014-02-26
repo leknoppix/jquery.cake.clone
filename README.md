@@ -4,7 +4,7 @@ A simple jQuery plugin to clone inputs generated via CakePHP.
 
 ## Installation
 
-Include the script * after * the Jquery librairy.
+Make sure you include the script *after* the jQuery library.
 
 ```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -14,7 +14,7 @@ Include the script * after * the Jquery librairy.
 
 ## How to
 
-Suppose we have this as instruction in php (of course linked to the CakePHP framework):
+Suppose we have this instruction in php (of course linked to the CakePHP framework):
 
 ```php
 <div class="body-0">
@@ -26,7 +26,7 @@ Suppose we have this as instruction in php (of course linked to the CakePHP fram
 
 ```
 
-We get source code HTML:
+This yields the following HTML code:
 
 ```html
 <div class="body-0">
@@ -35,7 +35,7 @@ We get source code HTML:
 
 ```
 
-So that the successful cloning correctly, we launched cloning when clicking on the link with the class selector called *addproduct*. We need to use the extension jquery.cake.clone accompanied with options to clone the fields selected.
+To ensure successful cloning, we trigger the cloning process by clicking the link that has the class selector called *addproduct*. We need to use the jquery.cake.clone extension together with the necessary options to clone the selected fields.
 Here is an example call:
 
 ```javascript
@@ -54,7 +54,7 @@ $(function() {
 
 ```
 
-When running a cloning, we get:
+After successful cloning, we get:
 ```html
 <div class="body-0">
 <div class="input text"><label for="Controller0Name">Name</label><input name="data[Controller][0][name]" type="text" id="0Name"/></div>
@@ -66,14 +66,14 @@ When running a cloning, we get:
 
 ```
 
-The options array contains several parameters.
+The options object contains several parameters.
 * The first parameter *init* identifies the master div (the div to clone).
-* The second parameter *nbrincrem* must be the same as the launch of * init* and will increment each time you add the number of the clone made​​..
+* The second parameter *nbrincrem* must be identical to *init*, and will increment each time you add a new clone.
 * The third parameter *classclone* specifies the name of the div to be cloned without its identification number.
 * The last parameter *controller* is used to specify the name of the controller.
 
 ## Evolution
 
-This plugin is simple, it may evolve progressively uses and returns. 
-To meet any problem, do not hesitate to use the wiki to return your ideas. 
-Thank you in advance.
+This plugin is still basic, it may evolve with reports and feedbacks. 
+Should you have any problem, question or inquiry, please do not hesitate to use the wiki and to share your ideas. 
+Thanks!
