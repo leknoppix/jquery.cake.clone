@@ -64,7 +64,7 @@ When running a cloning, we get:
 </div>
 <a href="#" class="addproduct">Add a new product</a>
 
-̀``
+```
 
 The options array contains several parameters.
 * The first parameter *init* identifies the master div (the div to clone).
