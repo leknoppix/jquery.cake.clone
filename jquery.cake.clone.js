@@ -7,13 +7,13 @@
 			options.nbrincrem++;
 
 			$(this).before( 
-				$('.'+options.classclone+options.init)
+				$('.'+options.classclone+options.delimiter+options.init)
 				.clone(true,true)
-        		.removeClass(options.classclone+options.init)
-        		.attr('class', options.classclone+options.nbrincrem)
+        		.removeClass(options.classclone+options.delimiter+options.init)
+        		.attr('class', options.classclone+options.delimiter+options.nbrincrem)
         	);
 	        
-	        $('.'+options.classclone+options.nbrincrem+" input").each(function()
+	        $('.'+options.classclone+options.delimiter+options.nbrincrem+" input").each(function()
 	        {
 	        	$(this).attr("name", $(this)
 	        		.attr("name")

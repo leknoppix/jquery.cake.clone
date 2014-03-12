@@ -41,9 +41,10 @@ Voici un exemple d'appel:
 ```javascript
 $(function() {
 	var options = {
-    	init:'0',
-    	nbrincrem:'0',
-    	classclone:'body-',
+    	init:0,
+    	nbrincrem:0,
+    	delimiter:'-',
+    	classclone:'body',
     	controller:'Controller',
   	}
 	$('.addproduct').on('click',function()
