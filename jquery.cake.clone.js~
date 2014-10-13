@@ -24,24 +24,6 @@
 	        		.replace(options.controller+0, options.controller+options.nbrincrem)
 	        	);
 	        });
-	        $('.'+options.classclone+options.delimiter+options.nbrincrem+" textarea").each(function()
-	        {
-	        	$(this).attr("name", $(this)
-	        		.attr("name")
-	        		.replace('['+options.controller+'][0]', '['+options.controller+']['+options.nbrincrem+']')
-	        	);
-	        	$(this).attr("id", $(this)
-	        		.attr("id")
-	        		.replace(options.controller+0, options.controller+options.nbrincrem)
-	        	);
-	        });
-	        $('.'+options.classclone+options.delimiter+options.nbrincrem+" label").each(function()
-	        {
-	        	$(this).attr("for", $(this)
-	        		.attr("for")
-	        		.replace(options.controller+'0', options.controller+options.nbrincrem)
-	        	);
-	        });
 		});
 	}
 
